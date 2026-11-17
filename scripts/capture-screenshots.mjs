@@ -17,6 +17,7 @@ const sites = [
   { slug: "workshop-platform", url: "https://workshop-frontend-pi.vercel.app/" },
   { slug: "iphone-showcase", url: "https://iphone-mu-nine.vercel.app/" },
   { slug: "isometric-room", url: "https://isometricroom.vercel.app/" },
+  { slug: "towman", url: "https://towman-virid.vercel.app/" },
 ];
 
 await mkdir(outDir, { recursive: true });

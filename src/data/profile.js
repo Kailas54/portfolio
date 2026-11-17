@@ -8,6 +8,7 @@ export const profile = {
   role: "DevOps Engineer",
   availability: "Available immediately",
   phone: "+91 8891154627",
+  phoneDubai: "+971 58 949 3617",
   email: "kailasnadh49@gmail.com",
   location: "Kollam, Kerala, India",
   resumeUrl: "/Kailas_Nadh_Resume_New.pdf",
@@ -198,6 +199,17 @@ export const profile = {
         "Interactive isometric room scene on the web — spatial design showcase with immersive visuals.",
       tags: ["Three.js", "WebGL", "Vercel"],
       accent: "from-leaf/15 to-ink-muted",
+    },
+    {
+      title: "Towman",
+      ghost: "Towman",
+      screenshot: "/projects/towman.png",
+      url: "https://towman-virid.vercel.app/",
+      category: "Live · Marketing",
+      description:
+        "Roadside towing and recovery brand site for Towman — hero storytelling, service breakdowns, WhatsApp dispatch flow, and on-call positioning for UAE drivers.",
+      tags: ["Landing page", "React", "Vercel"],
+      accent: "from-emerald-600/20 to-ink-muted",
     },
   ],
   projects: [

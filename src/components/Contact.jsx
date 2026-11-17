@@ -26,8 +26,16 @@ export default function Contact() {
                   href={`tel:${profile.phone.replace(/\s/g, "")}`}
                   className="block text-sand-dim transition hover:text-sand"
                 >
-                  {profile.phone}
+                  India {profile.phone}
                 </a>
+                {profile.phoneDubai && (
+                  <a
+                    href={`tel:${profile.phoneDubai.replace(/\s/g, "")}`}
+                    className="block text-sand-dim transition hover:text-sand"
+                  >
+                    Dubai {profile.phoneDubai}
+                  </a>
+                )}
                 <p className="text-sm text-sand-dim">{profile.location}</p>
                 <a
                   href={profile.resumeUrl}
