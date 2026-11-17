@@ -72,8 +72,9 @@ function ShowcaseDesktop({ screenshot, title, tilt = -5 }) {
 function enrichWork(project, index) {
   const category = project.category || "";
   let serviceTag = "Web Development";
-  if (/brand|design|3d|ui/i.test(category)) serviceTag = "Web Design";
-  if (/devops|cloud|ai/i.test(category)) serviceTag = "Engineering";
+  if (project.workGroup === "3d") serviceTag = "3D websites";
+  else if (/brand|design|3d|ui/i.test(category)) serviceTag = "Web Design";
+  else if (/devops|cloud|ai/i.test(category)) serviceTag = "Engineering";
 
   const palette = SHOWCASE_PALETTES[index % SHOWCASE_PALETTES.length];
   const ghost =
@@ -188,6 +189,9 @@ function TechnicalProjectItem({ project }) {
   );
 }
 
+const liveWorksGeneral = profile.liveWorks.filter((p) => p.workGroup !== "3d");
+const liveWorks3D = profile.liveWorks.filter((p) => p.workGroup === "3d");
+
 export default function Projects() {
   return (
     <section id="work" className="scroll-mt-24 bg-[#060606] py-20 text-white lg:py-28">
@@ -203,7 +207,26 @@ export default function Projects() {
         </header>
 
         <div className="grid gap-14 md:grid-cols-2 md:gap-x-10 lg:gap-x-12 lg:gap-y-10">
-          {profile.liveWorks.map((project, index) => (
+          {liveWorksGeneral.map((project, index) => (
+            <WorkCard key={project.url} project={project} index={index} live />
+          ))}
+        </div>
+
+        <header className="mb-12 mt-24 flex flex-col items-start md:mb-14 md:items-end md:text-right">
+          <p className="flex items-center gap-2 text-sm text-white/80">
+            <span className="h-2 w-2 rounded-full bg-[#ff5a1f]" aria-hidden />
+            Immersive builds
+          </p>
+          <h2 className="mt-3 font-hero-serif text-3xl text-white/90 sm:text-4xl lg:text-[2.75rem]">
+            3D websites
+          </h2>
+          <p className="mt-3 max-w-lg text-sm text-white/55 md:text-right">
+            Interactive WebGL and 3D-forward experiences — product, spatial, and brand sites.
+          </p>
+        </header>
+
+        <div className="grid gap-14 md:grid-cols-2 md:gap-x-10 lg:gap-x-12 lg:gap-y-10">
+          {liveWorks3D.map((project, index) => (
             <WorkCard key={project.url} project={project} index={index} live />
           ))}
         </div>

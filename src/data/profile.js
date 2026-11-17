@@ -124,7 +124,8 @@ export const profile = {
       title: "Adidas Product Experience",
       screenshot: "/projects/adidas-web.png",
       url: "https://adidas-web-mu.vercel.app/",
-      category: "Live · UI / 3D",
+      workGroup: "3d",
+      category: "Live · 3D websites",
       description:
         "Interactive adidas product explorer with sound, product selection flow, and immersive brand presentation.",
       tags: ["Three.js", "WebGL", "Vercel"],
@@ -134,7 +135,8 @@ export const profile = {
       title: "improps E-commerce",
       screenshot: "/projects/improps-ecom.png",
       url: "https://ecom-six-sepia-46.vercel.app/",
-      category: "Live · E-commerce",
+      workGroup: "3d",
+      category: "Live · 3D websites",
       description:
         "Modern e-commerce storefront for improps — product browsing and shopping UI on the web.",
       tags: ["E-commerce", "React", "Vercel"],
@@ -144,7 +146,8 @@ export const profile = {
       title: "MuLearn RIE",
       screenshot: "/projects/mulearn-rie.png",
       url: "https://mulearnrie.in/",
-      category: "Live · Product",
+      workGroup: "3d",
+      category: "Live · 3D websites",
       description:
         "Learning and community portal for Rajadhani Institute of Engineering and Technology — events, resources, and student engagement.",
       tags: ["Web App", "Production"],
@@ -194,7 +197,8 @@ export const profile = {
       title: "Isometric Room",
       screenshot: "/projects/isometric-room.png",
       url: "https://isometricroom.vercel.app/",
-      category: "Live · 3D / WebGL",
+      workGroup: "3d",
+      category: "Live · 3D websites",
       description:
         "Interactive isometric room scene on the web — spatial design showcase with immersive visuals.",
       tags: ["Three.js", "WebGL", "Vercel"],
@@ -205,7 +209,8 @@ export const profile = {
       ghost: "Towman",
       screenshot: "/projects/towman.png",
       url: "https://towman-virid.vercel.app/",
-      category: "Live · Marketing",
+      workGroup: "3d",
+      category: "Live · 3D websites",
       description:
         "Roadside towing and recovery brand site for Towman — hero storytelling, service breakdowns, WhatsApp dispatch flow, and on-call positioning for UAE drivers.",
       tags: ["Landing page", "React", "Vercel"],
